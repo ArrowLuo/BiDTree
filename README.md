@@ -12,14 +12,18 @@ improve the performance of aspect term extraction (ATE).
 ## Requirements
 
 * python 2.7
-* tensorflow == 1.2.0
+* tensorflow==1.2.0
+
+```
+pip install -r requirements.txt
+```
 
 ## Running
 
 ```
 python main.py \
     --do_preprocess --do_train --do_evaluate \
-    --lr 0.001 --batch_size 16 --nepochs 100
+    --lr 0.001 --batch_size 20 --nepochs 100
 ```
 See [main.py](./main.py) for more training arguments.
 
