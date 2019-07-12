@@ -23,9 +23,9 @@ python main.py \
 ```
 See [main.py](./main.py) for more training arguments.
 
-## Example
+## Approach of Model Dependency Tree (An Example)
 
-here is an example to briefly introduce the structure information we 
+Here is an example to briefly introduce the structure information we 
 need to organize in our model progress. It is complex due to the arbitrary 
 layer's number and dependent nodes' number in a dependency tree. No matter 
 in bottom-up manner or top-down manner, we need to firstly compute the 
