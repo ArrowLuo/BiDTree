@@ -3,7 +3,7 @@
 This repo contains the code of the following paper:
 
 *[Improving Aspect Term Extraction with Bidirectional Dependency Tree Representation](https://arxiv.org/pdf/1805.07889.pdf). 
-Huaishao Luo and Tianrui Li and Bing Liu and Bin Wang and Herwig Unger. TASLP, 2019, 27(7):1201-1212.*
+Huaishao Luo, Tianrui Li, Bing Liu, Bin Wang and Herwig Unger. TASLP, 2019, 27(7):1201-1212.*
 
 This paper proposes a bidirectional dependency tree network to extract 
 dependency structure features from the given sentences to 
@@ -20,11 +20,16 @@ pip install -r requirements.txt
 
 ## Running
 
+##### preprocess
 ```
-python main.py \
-    --do_preprocess --do_train --do_evaluate \
-    --lr 0.001 --batch_size 20 --nepochs 100
+python main.py --do_preprocess
 ```
+
+##### train
+```
+python main.py --do_train --do_evaluate --lr 0.001 --batch_size 20 --nepochs 100
+```
+
 See [main.py](./main.py) for more training arguments.
 
 ## Approach of Model Dependency Tree (An Example)
